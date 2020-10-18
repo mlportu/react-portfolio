@@ -29,9 +29,9 @@ function Projects() {
             <div className = "flex-row">
                 {photos.map((image, i) => (
                     <img
-                        src = {require(`../../assets/images/Large/${i}.png`)}
+                        src = {require(`../../assets/images/small/${i}.jpg`)}
                         alt={image.name}
-                        className = "image-thumbnail mx-1"
+                        className = "img-thumbnail mx-1"
                         key = {image.name}
                         />
                 ))}
