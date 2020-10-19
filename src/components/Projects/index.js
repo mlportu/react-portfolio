@@ -6,32 +6,38 @@ function Projects() {
         {
             name:'Doggypedia',
             description: 'All the information you would want to know about any dog breed all in one place',
-            link: 'https://kray306090.github.io/yorkie-terrier/'
+            link: 'https://kray306090.github.io/yorkie-terrier/',
+            github: 'https://github.com/KRAY306090/yorkie-terrier'
         },
         {
             name: 'Health Log',
             description: 'Track and monitor your health to help identify healthy habbits to imporve your life',
-            link: 'https://fathomless-thicket-41464.herokuapp.com/'
+            link: 'https://fathomless-thicket-41464.herokuapp.com/',
+            github: 'https://github.com/sanders43/group-api-project'
         },
         {
             name: 'Weather Dashboard',
             description: 'Know the weather for the next week in any city of your choice',
-            link: 'https://mlportu.github.io/weather-dashboard/'
+            link: 'https://mlportu.github.io/weather-dashboard/',
+            github: 'https://github.com/mlportu/weather-dashboard'
         },  
         {
             name: 'Workday Scheduler',
             description: 'Track your schedule and never miss an appointment',
-            link: 'https://mlportu.github.io/workday-scheduler/'
+            link: 'https://mlportu.github.io/workday-scheduler/',
+            github: 'https://github.com/mlportu/workday-scheduler'
         },
         {
             name: 'Tech Blog',
             description: 'Post all your favorite Tech news and updates to share with friends',
-            link: 'https://frozen-fjord-11998.herokuapp.com/'
+            link: 'https://frozen-fjord-11998.herokuapp.com/',
+            github: 'https://github.com/mlportu/techblog'
         },
         {
             name: 'Note Taker',
             description: 'Keep track of your thoughts and other notes throughout the day',
-            link: 'https://vast-coast-30336.herokuapp.com/'
+            link: 'https://vast-coast-30336.herokuapp.com/',
+            github: 'https://github.com/mlportu/note-taker'
         },
     ])
 
