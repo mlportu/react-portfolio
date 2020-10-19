@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import About from './components/About';
 import Nav from './components/Nav';
-import Gallery from './components/Gallery';
+import Projects from './components/Projects';
 import ContactForm from './components/Contact';
 
 
@@ -18,7 +18,7 @@ const [contactSelected, setContactSelected] = useState(false);
       <main>
       {!contactSelected ? (
           <>
-            <Gallery></Gallery>
+          <Projects></Projects>
             <About></About>
           </>
         ) : (
