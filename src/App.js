@@ -4,35 +4,33 @@ import About from './components/About';
 import Nav from './components/Nav';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 
 
 function App() {
 const [contactSelected, setContactSelected] = useState(false);
-const[pages] = useState([
-  {name: "Projects"},
-  {name: "Resume"}
-  ]);
-
-  const[currentPage, setCurrentPage] = useState(pages[0]);
+const [resumeSelected, setResumeSelected] = useState(false);
+  
 
   return (
     <div className="App">
       <Nav
-        pages = {pages}
-        currentPage = {currentPage}
-        setCurrentPage = {setCurrentPage}
+        resumeSelected = {resumeSelected}
+        setResumeSelected = {setResumeSelected}
         contactSelected = {contactSelected}
         setContactSelected = {setContactSelected}
       ></Nav>
       <main>
-      {!contactSelected ? (
+      {!contactSelected && !resumeSelected ? (
           <>
-            <Gallery currentPage = {currentPage}></Gallery>
+            <Gallery></Gallery>
             <About></About>
           </>
+        ) : !contactSelected && resumeSelected ? (
+          <Resume></Resume>
         ) : (
-            <ContactForm></ContactForm>
-          )}
+          <ContactForm></ContactForm>
+        )}
       
       </main>
     </div>

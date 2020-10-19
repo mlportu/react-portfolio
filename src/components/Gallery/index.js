@@ -1,25 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Project from '../Projects';
-import Resume from '../Resume';
 
 
 
-function Gallery({ currentPage }) {
-    const{name} = currentPage;
 
-    console.log(name);
+function Gallery() {
+  
 
-    const [resumeSelected, setResumeSelected] = useState(false);
     return(
         <section>
-            <h1>{name}</h1>
-            {!resumeSelected ? (
-            <>
+            <h1>Projects</h1>
                 <Project/>
-            </>
-            ) : (
-                <Resume/>
-            )}
         </section>
     );
 }

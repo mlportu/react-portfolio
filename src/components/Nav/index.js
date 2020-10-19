@@ -2,9 +2,8 @@ import React from 'react';
 
 function Nav (props) {
     const {
-        pages=[],
-        currentPage,
-        setCurrentPage,
+        resumeSelected,
+        setResumeSelected,
         contactSelected,
         setContactSelected
     } = props
@@ -21,21 +20,29 @@ function Nav (props) {
                             About Me
                         </a>
                     </li>
-                    {pages.map((page)=>(
-                        <li 
-                        className = {`mx-2 ${currentPage.name === page.name && !contactSelected &&'navActive'}`}
-                        key = {pages.name}
+                    <li 
+                        className = {`mx-2 ${!contactSelected && !resumeSelected && 'navActive'}`}
                     >
                         <span
                             onClick={() => {
-                                setCurrentPage(page);
                                 setContactSelected(false)
+                                setResumeSelected(false)
                             }}> 
-                            {page.name} 
+                            Projects 
                         </span>
                     </li>
-                    ))}
-                    <li className = {`mx-2 ${contactSelected && 'navActive'}`}> 
+                    <li 
+                        className = {`mx-2 ${!contactSelected && resumeSelected && 'navActive'}`}
+                    >
+                        <span
+                            onClick={() => {
+                                setContactSelected(false)
+                                setResumeSelected(true)
+                            }}> 
+                            Resume 
+                        </span>
+                    </li>
+                    <li className = {`mx-2 ${contactSelected && !resumeSelected && 'navActive'}`}> 
                         <span onClick={() => setContactSelected(true)}> Contact </span>
                     </li>
                 </ul>
