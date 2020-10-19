@@ -25,7 +25,7 @@ function Projects() {
             name: 'Workday Scheduler',
             description: 'Track your schedule and never miss an appointment',
             link: 'https://mlportu.github.io/workday-scheduler/',
-            github: 'https://github.com/mlportu/workday-scheduler'
+            github: 'https://github.com/mlportu/workday-schedulerq'
         },
         {
             name: 'Tech Blog',

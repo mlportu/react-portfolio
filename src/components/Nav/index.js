@@ -26,9 +26,7 @@ function Nav (props) {
                         className = {`mx-2 ${currentPage.name === page.name && !contactSelected &&'navActive'}`}
                         key = {pages.name}
                     >
-                    
-                    
-                        <span 
+                        <span
                             onClick={() => {
                                 setCurrentPage(page);
                                 setContactSelected(false)
