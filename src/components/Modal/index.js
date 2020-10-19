@@ -16,7 +16,6 @@ function Modal ({onClose, currentPhoto}) {
                 <p>
                     {description}
                 </p>
-           
                 <button onClick={onClose} type="button">
                     Close
                 </button>
