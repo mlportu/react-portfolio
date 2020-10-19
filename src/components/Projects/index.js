@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import Modal from '../Modal';
 
 function Projects() {
     const [photos] = useState([
@@ -34,14 +34,25 @@ function Projects() {
             link: 'https://vast-coast-30336.herokuapp.com/'
         },
     ])
+
+    const [currentPhoto, setCurrentPhoto] = useState();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const toggleModal = (image, i) => {
+        setCurrentPhoto({...image, index:i});
+        setIsModalOpen(true);
+    }
     return(
         <div>
+            {isModalOpen && <Modal currentPhoto={currentPhoto}></Modal>}
+         
             <div className = "flex-row">
                 {photos.map((image, i) => (
                     <img
                         src = {require(`../../assets/images/small/${i}.jpg`)}
                         alt={image.name}
                         className = "img-thumbnail mx-1"
+                        onClick = {() => toggleModal(image, i)}
                         key = {image.name}
                         />
                 ))}
