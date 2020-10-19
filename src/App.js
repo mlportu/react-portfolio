@@ -27,12 +27,13 @@ const[pages] = useState([
       <main>
       {!contactSelected ? (
           <>
-            <Gallery></Gallery>
+            <Gallery currentPage = {currentPage}></Gallery>
             <About></About>
           </>
         ) : (
             <ContactForm></ContactForm>
           )}
+      
       </main>
     </div>
   );
