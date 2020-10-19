@@ -23,6 +23,16 @@ function Projects() {
             description: 'Track your schedule and never miss an appointment',
             link: 'https://mlportu.github.io/workday-scheduler/'
         },
+        {
+            name: 'Tech Blog',
+            description: 'Post all your favorite Tech news and updates to share with friends',
+            link: 'https://frozen-fjord-11998.herokuapp.com/'
+        },
+        {
+            name: 'Note Taker',
+            description: 'Keep track of your thoughts and other notes throughout the day',
+            link: 'https://vast-coast-30336.herokuapp.com/'
+        },
     ])
     return(
         <div>
