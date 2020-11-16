@@ -4,6 +4,12 @@ import Modal from '../Modal';
 function Projects() {
     const [photos] = useState([
         {
+            name:'Idols Initiatives',
+            description: 'Find out more about the charitable work your favorite idols are engaged with.',
+            link: 'https://radiant-temple-46938.herokuapp.com/',
+            github: 'https://github.com/taylornyquist/idols-initiatives'
+        },
+        {
             name:'Doggypedia',
             description: 'All the information you would want to know about any dog breed all in one place',
             link: 'https://kray306090.github.io/yorkie-terrier/',
